@@ -3,8 +3,10 @@ body {
 }
 
 h1 {
+    display: inline-block;
+    font-size: 50px;
+    margin: 200px auto;
     text-align: center;
-    margin: 200px;
     color: white;
     border-color: white;
     border-style: solid;
@@ -40,8 +42,6 @@ ul {
 }
 
 .img-olivia-me {
-    align-self: flex-end;  
-    float: right;
     border-left-color: white;
     border-style: double;
     border-width: 8px;
