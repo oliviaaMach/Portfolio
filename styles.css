@@ -34,7 +34,7 @@ h2, h3, h4 {
     margin: 5px 30px;
 }
 
-h3 {
+.h3-uppercase {
     text-transform: uppercase;
     margin-top: 40px;
     }
@@ -45,6 +45,32 @@ h3 {
 
 #content ul li {
     margin-left: 40px;
+    margin-bottom: 10px;
+
+}
+
+#content ul li a{
+    color: darkblue;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    transition: font-weight 0.2s;
+}
+
+#content ul li:hover a {
+    font-weight: 700;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    transition: font-weight 0.2s;
+}
+
+a:hover {
+    font-weight: 700;
 }
 
 nav {
