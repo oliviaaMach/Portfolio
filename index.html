@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Meddon&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">'
 		<link rel="stylesheet" href="styles.css" />
 		<title>My Website</title>
 	</head>
@@ -12,32 +12,38 @@
 	<body>
 
         <nav>
-            <a href="#" class="nav-links">Home</a>
+            <a href="index.html" class="nav-links">Home</a>
             <a href="#" class="nav-links">About</a>
             <a href="#" class="nav-links">Contact</a>
-            <a href="#" class="nav-links">Portfolio</a>
+            <a href="portfolio.html" class="nav-links">Portfolio</a>
         </nav>
 
 
-        <div id="header">
+        <header>
             <img src="assets/img/olivia-me.png" class="img-olivia-me" width="400px" alt="Header Olivia Mach i tecknad form">
                 <div class="header-text">
                     <h1>Olivia Mach</h1>
                 <p class="p-header">Hello World!</p>
                 </div>
-        </div>
+        </header>
 
-        <div id="container">
+        <main>
             <div id="side-info">
-                <img src="#" class="img-olivia" width="150px" alt="Profilbild Olivia Mach">
-                <h2>Kontaktuppgifter:</h2>
-                    <p>Namn:</p>
-                    <p>Adress</p>
-                    <p>Telefon</p>
-                    <p>E-mail</p>
+                    <hr>
+                <div class="hobby">
+                    <h2>Mina hobbys</h2>
+                    <ul>
+                        <li>Virka och brodera</li>
+                        <li>Laga mat och baka</li>
+                        <li>Utflykter med barnen</li>
+                        <li>Spel</li>
+                    </ul>
+                </div>
+                
             </div>
 
             <div id="content">
+                    <hr>
                 <div class="aboutme">
                     <h2>Kort om mig</h2>
                         <p>Jag heter Olivia Mach och är 34 år gammal.
@@ -47,20 +53,13 @@
                             Därför har jag tagit steget till att skola om mig för att göra något som jag vet att jag kommer trivas med.</p>      
                 </div>
 
-                    <hr>
-
-                <div class="hobby">
-                    <h2>Hobby</h2>
-                    <ul>
-                        <li>Virka och brodera</li>
-                        <li>Laga mat och baka</li>
-                        <li>Utflykter med barnen</li>
-                        <li>Spel</li>
-                    </ul>
-                </div>
             </div>
-        </div>
+        </main>
 
+        <footer>
+            Copyright &copy; <span id="year"></span> Olivia Mach
+        </footer>
 
+        <script src="index.js" charset="UTF-8"></script>
 	</body>
 	</html>
