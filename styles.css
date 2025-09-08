@@ -2,15 +2,24 @@ body {
     background-color: black;
 }
 
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 h1 {
-    display: inline-block;
+    display: block;
+    font-family: 'meddon', 'Times New Roman', Times, serif;
     font-size: 50px;
-    margin: 200px auto;
-    text-align: center;
     color: white;
-    border-color: white;
-    border-style: solid;
-    border-width: 5px;
+    border-color: black;
+    border-left-color: white;
+    border-style: double;
+    border-width: 8px;
+    margin-top: 150px;
+    margin-left: 50px;
+    padding: 30px 0 30px 40px;
 }
 
 h2 {
@@ -18,9 +27,32 @@ h2 {
     margin-right: 30px;
 }
 
+nav {
+    position: relative;
+    top: 20px;
+    margin-left: 170px;
+}
+
+.nav-links {
+    color: white;
+    margin: 20px;
+}
+
 p {
+    display: inline-block;
     margin-left: 30px;
     margin-right: 30px;
+}
+
+.p-header {
+    color: white;
+    font-size: 20px;
+    border-color: black;
+    border-right-color: white;
+    border-style: double;
+    border-width: 8px;
+    margin-left: 500px;
+    padding: 10px 20px 10px 0px;
 }
 
 .p-center {
@@ -35,16 +67,11 @@ ul {
 #header {
     display: flex;
     background-color: black;
-    margin-top: 20px;
+    margin-top: 50px;
     width: 75%;
     height: 600px;
     justify-self: center;
-}
-
-.img-olivia-me {
-    border-left-color: white;
-    border-style: double;
-    border-width: 8px;
+    align-items: flex-start
 }
 
 #container {
