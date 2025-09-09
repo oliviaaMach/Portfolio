@@ -1,17 +1,55 @@
+/* Global Styles */
 body {
     background-color: black;
     font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
+    color: #111;
+    line-height: 1.6;
 }
 
+a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 500;
+    transition: font-weight 0.2s;
+}
+a:hover {
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0 100px;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Header */
 header {
     display: flex;
-    background-color: black;
-    margin-top: 50px;
-    width: 75%;
-    height: 600px;
-    justify-self: center;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto 0 auto; /* push below nav */
+    max-width: 1200px;
+    height: 500px;
+    padding: 0 20px;
 }
 
 .header-text {
@@ -21,12 +59,11 @@ header {
 }
 
 h1 {
-    font-family: 'Meddon', 'Times New Roman', Times, serif;
+    font-family: 'Meddon', 'Times New Roman', serif;
     font-size: 50px;
     color: white;
     border-left: 8px double white;
-    margin-top: 150px;
-    margin-left: 50px;
+    margin: 0;
     padding: 30px 0 30px 40px;
 }
 
@@ -37,121 +74,70 @@ h2, h3, h4 {
 .h3-uppercase {
     text-transform: uppercase;
     margin-top: 40px;
-    }
-
+}
 .h4-margin {
     margin-top: 40px;
 }
 
-#content ul li {
-    margin-left: 40px;
-    margin-bottom: 10px;
-
-}
-
-#content ul li a{
-    color: darkblue;
-    text-decoration: none;
-    list-style: none;
-    font-weight: 500;
-    transition: font-weight 0.2s;
-}
-
-#content ul li:hover a {
-    font-weight: 700;
-}
-
-a {
-    color: darkblue;
-    text-decoration: none;
-    list-style: none;
-    font-weight: 500;
-    transition: font-weight 0.2s;
-}
-
-a:hover {
-    font-weight: 700;
-}
-
-nav {
-    background-color: black;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-}
-
-nav ul {
-    margin-left: 100px;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin-left: 50px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    transition: font-weight 0.2s;
-}
-
-nav ul li:hover a {
-    font-weight: 700;
-}
-
+/* Main Layout */
 main {
     display: flex;
-    margin-top: 20px;
-    width: 75%;
-    justify-self: center;
-    /* opacity: 0;
-    transition: opacity 3s; */ 
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px 100px; /* extra bottom padding for footer */
 }
 
 #side-info,
 #content {
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 30px 10px;
-    margin: 10px 10px 100px 10px;
+    padding: 30px 20px;
+    flex: 1;
+    min-width: 280px;
+    border-radius: 6px;
 }
 
 #side-info {
-    width: 25%;
+    flex: 0.3;
 }
-
 #content {
-    width: 70%;
+    flex: 0.7;
 }
 
+#content ul {
+    margin: 15px 30px;
+    padding: 0;
+    list-style: none;
+}
+
+#content ul li {
+    margin-bottom: 10px;
+}
+
+#content ul li a {
+    color: darkblue;
+}
+
+/* Typography */
 .p-header {
     color: white;
     font-size: 25px;
     border-right: 8px double white;
-    margin-left: 500px;
     padding: 10px 20px 10px 0;
+    margin: 20px auto;
+    display: table;
 }
 
 .p-center {
     text-align: center;
 }
-
 .p-bold {
     font-weight: bold;
 }
 
 p {
     margin: 15px 30px;
-}
-
-ul {
-    margin: 15px 30px;
-    padding: 0;
 }
 
 hr {
@@ -161,12 +147,16 @@ hr {
     width: 80%;
 }
 
+/* Images */
 .img-olivia {
     margin-top: 20px;
     margin-left: 30px;
     border-radius: 5%;
+    max-width: 100%;
+    height: auto;
 }
 
+/* Footer */
 footer {
     position: fixed;
     left: 0;
@@ -179,3 +169,20 @@ footer {
     margin: 0;
     z-index: 100;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    h1 {
+        border-left: none;
+        border-top: 8px double white;
+        padding: 20px;
+    }
+
+    nav ul {
+        margin: 0 20px;
