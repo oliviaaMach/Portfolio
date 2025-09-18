@@ -185,28 +185,38 @@ main {
     grid-column: span 4;
 }
 
-.mainProjects {
-    width: 200px;
-    height: 200px;
-    border: 2px solid red;
-    margin: 20px 30px;
-}
-
 #main-projects h2 {
     flex-basis: 100%;
     margin-bottom: 20px;
 }
 
-.card1 {
-
+.mainProjects {
+    width: 250px;
+    height: 450px;
+    margin: 20px 50px;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 3px 0 10px 3px rgba(0,0,0,0.3);
+    transition: transform 1s ease;
 }
 
-.card2 {
-
+.mainProjects:hover{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
 }
 
-.card3 {
 
+
+.card1 img {
+  transform: translate(-30%, 0%);
+}
+
+.card2 img {
+  transform: translate(-34%, 0%);
+}
+
+.card3 img {
+  transform: translate(-33%, 0%);
 }
 
 
