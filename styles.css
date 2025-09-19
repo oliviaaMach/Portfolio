@@ -39,6 +39,13 @@ h2, h3, h4 {
     margin: 5px 30px;
 }
 
+/* hr {
+    height: 1px;
+    border: none;
+    background-color: black;
+    width: 80%;
+} */
+
 /* Global Styles END */
 
 
@@ -81,10 +88,11 @@ header {
     margin: 0 auto;
 
     /* border: 2px red solid; */
-    background: var(--gardient)
+    background: var(--gardient);
     /* background: linear-gradient(135deg, #d5bfbf 0%, #c9d6c5 100%); */
     /* background: linear-gradient(135deg, #e9d8a6 0%, #bcd4e6 100%); */
     /* background: radial-gradient(circle at top left, #d8e2dc 0%, #b7c4cf 100%); */
+    
 }
 
 header img {
@@ -96,7 +104,6 @@ header img {
     height: auto;
     /* box-shadow: 0 10px 30px rgba(0,0,0,0.4); */
 }
-
 
 header h1 {
     grid-column: 3 /6;
@@ -264,12 +271,8 @@ main {
     margin-top: 40px;
 }
 
-/* hr {
-    height: 1px;
-    border: none;
-    background-color: black;
-    width: 80%;
-} */
+/* CV page END */
+
 
 /* Footer */
 footer {
@@ -285,7 +288,11 @@ footer {
     z-index: 100;
 }
 
+/* Footer END */
+
 /* Responsive Adjustments */
+
+
 @media (max-width: 800px) {
     header {
         display: block;
@@ -326,3 +333,5 @@ footer {
         justify-self: center;
     }
 }
+
+/* Responsive Adjustments END */
