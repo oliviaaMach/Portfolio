@@ -26,6 +26,7 @@ p {
     margin: 15px 30px;
 }
 
+
 h1 {
     font-family: 'Meddon', 'Times New Roman', serif;
     font-size: 60px;
@@ -174,6 +175,7 @@ main {
 #content-portfolio {
     grid-column: span 3;
 }
+
 #content-cv {
     grid-column: span 3;
 }
@@ -224,8 +226,7 @@ main {
     margin-bottom: 20px;
 }
 
-.mainProjects {
-    opacity: 0.8;
+.cards {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     justify-items: center;
@@ -233,18 +234,19 @@ main {
     width: 250px;
     height: 450px;
     margin: 20px 50px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 10%;
     box-shadow: 3px 0 10px 3px rgba(0,0,0,0.3);
     transition: transform 1s ease;
 }
 
-.mainProjects h3 {
+.cards h3 {
     font-size: 21px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
-.mainProjects:hover{
+
+.cards:hover{
     transition: transform 0.5s ease;
     transform: scale(1.1);
 }
@@ -254,7 +256,7 @@ main {
 }
 
 .card1 img {
-    width: 200px;
+    height: 100px;
 }
 
 .card2 {
@@ -262,19 +264,33 @@ main {
 }
 
 .card2 img {
-    width: 200px;
+    height: 100px;
 }
 
 .card3 {
     background-color: #011F3F;
 }
 
-.card2, .card3 h3 {
+.card3 img {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.card1 a:hover {
+    color: darkblue;
+}
+
+.card2, .card3, h3 p {
     color: white;
 }
 
-.card3 img {
-    width: 150px;
+.card2 a, .card3 a {
+    color: #d8f3dc;
+}
+
+.card2 a:hover, .card3 a:hover {
+    font-weight: 700;
+    color: #d8f3dc;
 }
 
 /* Main END */
