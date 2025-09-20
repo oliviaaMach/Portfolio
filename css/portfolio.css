@@ -1,0 +1,13 @@
+#content-portfolio ul {
+    margin: 15px 30px;
+    padding: 0;
+    list-style: none;
+}
+
+#content-portfolio ul li {
+    margin-bottom: 10px;
+}
+
+#content-portfolio ul li a {
+    color: darkblue;
+}

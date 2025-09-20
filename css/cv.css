@@ -1,0 +1,15 @@
+/* .p-center {
+    text-align: center;
+} */
+
+.p-bold {
+    font-weight: bold;
+}
+
+.h3-uppercase {
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.h4-margin {
+    margin-top: 40px;
+}
