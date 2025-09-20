@@ -252,11 +252,19 @@ main {
 }
 
 .card1 {
-    background-color: #F3F7EC;
+    background: #F3F7EC;
+    
 }
 
 .card1 img {
+    position: absolute;
     height: 100px;
+    grid-row: 3 / 4;
+}
+.card1 p {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
 }
 
 .card2 {
@@ -265,6 +273,11 @@ main {
 
 .card2 img {
     height: 100px;
+    grid-row: 3 / 4;
+}
+
+.card2 p {
+    z-index: 1;
 }
 
 .card3 {
@@ -273,7 +286,11 @@ main {
 
 .card3 img {
     height: 100px;
-    margin-top: 10px;
+    grid-row: 3 / 4;
+}
+
+.card3 p {
+    z-index: 1;
 }
 
 .card1 a:hover {
