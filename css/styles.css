@@ -26,16 +26,6 @@ p {
     margin: 15px 30px;
 }
 
-
-h1 {
-    font-family: 'Meddon', 'Times New Roman', serif;
-    font-size: 60px;
-    color: white;
-    border-left: 8px double white;
-    margin: 0;
-    padding: 30px 0 30px 40px;
-}
-
 h2, h3, h4 {
     margin: 5px 30px;
 }
@@ -107,10 +97,17 @@ header img {
 }
 
 header h1 {
+    font-family: 'Meddon', 'Times New Roman', serif;
+    font-size: 60px;
+    color: white;
     grid-column: 3 /6;
     grid-row: 4 / 5;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    box-shadow: inset 10px 0px 10px -12px rgba(0,0,0,0.5);
+    /* box-shadow: inset 10px 0px 10px -12px rgba(0,0,0,0.5); */
+    /* border-left: 8px double white; */
+    margin: 0;
+    padding: 30px 0 30px 40px;
+    -webkit-text-stroke: 0.1px #000;
     opacity: 0;
     transform: translateX(-40px); /* Transition börjar 40px mer åt vänster */
     animation: slideLeft 3s ease forwards; /* Startar automatiskt */
@@ -128,12 +125,12 @@ header p {
     grid-row: 5 / 5;
     color: white;
     font-size: 25px;
-    border-right: 8px double white;
+    /* border-right: 8px double white; */
     padding: 10px 20px 10px 0;
     margin: 20px auto;
     align-self: center;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    box-shadow: 10px 0px 10px -10px rgba(0,0,0,0.5);
+    /* box-shadow: 10px 0px 10px -10px rgba(0,0,0,0.5); */
     transform: translateX(40px); /* Transition börjar 40px mer åt höger*/
     animation: slideRight 1.5s ease forwards; /* Startar automatiskt */
 }
@@ -232,7 +229,7 @@ main {
     justify-items: center;
     align-items: center;
     width: 250px;
-    height: 450px;
+    height: 300px;
     margin: 20px 50px;
     /* overflow: hidden; */
     border-radius: 10%;
@@ -265,6 +262,7 @@ main {
     position: absolute;
     z-index: 1;
     width: 200px;
+    font-size: 12px;
 }
 
 .card2 {
@@ -272,6 +270,7 @@ main {
 }
 
 .card2 img {
+    position: absolute;
     height: 100px;
     grid-row: 3 / 4;
 }
@@ -285,6 +284,7 @@ main {
 }
 
 .card3 img {
+    position: absolute;
     height: 100px;
     grid-row: 3 / 4;
 }
@@ -299,6 +299,7 @@ main {
 
 .card2, .card3, h3 p {
     color: white;
+    font-size: 12px;
 }
 
 .card2 a, .card3 a {
