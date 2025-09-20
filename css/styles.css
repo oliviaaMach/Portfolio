@@ -225,14 +225,14 @@ main {
 
 .cards {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
     justify-items: center;
     align-items: center;
     width: 250px;
     height: 300px;
     margin: 20px 50px;
     /* overflow: hidden; */
-    border-radius: 10%;
+    border-radius: 20%;
     box-shadow: 3px 0 10px 3px rgba(0,0,0,0.3);
     transition: transform 1s ease;
 }
@@ -254,15 +254,15 @@ main {
 }
 
 .card1 img {
-    position: absolute;
     height: 100px;
     grid-row: 3 / 4;
 }
+
 .card1 p {
     position: absolute;
     z-index: 1;
     width: 200px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .card2 {
@@ -270,13 +270,16 @@ main {
 }
 
 .card2 img {
-    position: absolute;
     height: 100px;
     grid-row: 3 / 4;
 }
 
 .card2 p {
+    color: white;
+    position: absolute;
     z-index: 1;
+    width: 200px;
+    font-size: 13px;
 }
 
 .card3 {
@@ -284,31 +287,16 @@ main {
 }
 
 .card3 img {
-    position: absolute;
     height: 100px;
     grid-row: 3 / 4;
 }
 
 .card3 p {
-    z-index: 1;
-}
-
-.card1 a:hover {
-    color: darkblue;
-}
-
-.card2, .card3, h3 p {
     color: white;
-    font-size: 12px;
-}
-
-.card2 a, .card3 a {
-    color: #d8f3dc;
-}
-
-.card2 a:hover, .card3 a:hover {
-    font-weight: 700;
-    color: #d8f3dc;
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    font-size: 13px;
 }
 
 /* Main END */
