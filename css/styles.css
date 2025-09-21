@@ -99,7 +99,7 @@ header img {
 header h1 {
     font-family: 'Meddon', 'Times New Roman', serif;
     font-size: 60px;
-    color: white;
+    color: black;
     grid-column: 3 /6;
     grid-row: 4 / 5;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
@@ -107,7 +107,7 @@ header h1 {
     /* border-left: 8px double white; */
     margin: 0;
     padding: 30px 0 30px 40px;
-    -webkit-text-stroke: 0.1px #000;
+    /* -webkit-text-stroke: 0.1px #000; */
     opacity: 0;
     transform: translateX(-40px); /* Transition börjar 40px mer åt vänster */
     animation: slideLeft 3s ease forwards; /* Startar automatiskt */
@@ -123,7 +123,7 @@ header h1 {
 header p {
     grid-column: 4 / 5;
     grid-row: 5 / 5;
-    color: white;
+    color: black;
     font-size: 25px;
     /* border-right: 8px double white; */
     padding: 10px 20px 10px 0;
