@@ -1,7 +1,10 @@
 /* .p-center {
     text-align: center;
 } */
-
+ 
+#content-cv {
+    grid-column: span 3;
+}
 .p-bold {
     font-weight: bold;
 }

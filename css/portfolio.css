@@ -1,3 +1,6 @@
+#content-portfolio {
+    grid-column: span 3;
+}
 #content-portfolio ul {
     margin: 15px 30px;
     padding: 0;
