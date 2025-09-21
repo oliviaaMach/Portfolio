@@ -142,9 +142,29 @@ header p {
     }
 }
 
-/* Header END */
+/* Head END */
 
-/* Footer */
+
+/* Main START */
+
+#side-info {
+    grid-column: span 1;
+}
+
+#side-info,
+#content,
+#content-portfolio,
+#content-cv {
+    /* background-color: rgba(255, 255, 255, 0.7); */
+    /* border-left: #111 2px solid;
+    border-right: #111 2px solid; */
+    padding: 30px 20px;
+    border-radius: 6px;
+}
+
+/* Main END */
+
+/* Footer START */
 footer {
     position: fixed;
     left: 0;

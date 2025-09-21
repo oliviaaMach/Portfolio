@@ -23,19 +23,10 @@ main {
     color: #3f3f3d;
 }
 
-#side-info {
-    grid-column: span 1;
-}
+.quotemarks {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
 
-#side-info,
-#content,
-#content-portfolio,
-#content-cv {
-    /* background-color: rgba(255, 255, 255, 0.7); */
-    /* border-left: #111 2px solid;
-    border-right: #111 2px solid; */
-    padding: 30px 20px;
-    border-radius: 6px;
 }
 
 .logo-socialmedia {
@@ -58,7 +49,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.7);
+    /* background-color: rgba(255, 255, 255, 0.7); */
     padding: 30px 20px;
     border-radius: 6px;
     grid-column: span 4;
