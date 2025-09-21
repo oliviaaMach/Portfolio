@@ -24,9 +24,21 @@ main {
 }
 
 .quotemarks {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 100px;
+    display: flex;
+    position: absolute;
+    width: 37%;
+    height: 20%;
+    align-items: center;
+}
 
+.quotemarks img {
+    width: 150px;
+    opacity: 10%;
+    margin: auto;
+}
+
+.upsdown {
+    transform: rotate(180deg);
 }
 
 .logo-socialmedia {
@@ -36,13 +48,6 @@ main {
 .logo-socialmedia img {
     width: 30px;
     margin: 15px 5px 0 0;
-}
-
-.logo-socialmedia p {
-    align-self: left;
-    font-size: 8px;
-    margin: -8px 0 0 3px;
-    padding: 0;
 }
 
 #main-projects {
