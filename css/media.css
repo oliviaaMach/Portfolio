@@ -31,11 +31,9 @@
 
     .quotemarks {
     display: flex;
-    position: absolute;
     width: 37%;
     justify-self: center;
     align-content: center;
-    margin-top: -180px;
     }
 
     #side-info,
