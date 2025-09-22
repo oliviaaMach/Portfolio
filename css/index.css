@@ -9,9 +9,11 @@ main {
 }
 
 hr {
-    border: 1px solid #333;
+    height: 1px;
+    border: none;
+    background-color: #011F3F;
     grid-column: 1 / -1;
-    width: 100%;
+    width: 70%;
 }
 
 #content {
@@ -88,7 +90,6 @@ hr {
     max-width: 45%;
     text-align: justify;
     justify-self: center;
-
 }
 
 .cards {

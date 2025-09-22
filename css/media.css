@@ -6,12 +6,6 @@
         height: auto;
     }
 
-    header h1 {
-        border-left: none;
-        border-top: 8px double white;
-        padding: 20px;
-        margin: 20px 0 0 0;
-    }
 
     header p {
         border: none;
@@ -52,3 +46,12 @@
         justify-self: center;
     }
 }
+
+/* hr {
+    height: 1px;
+    border: none;
+    background-color: #011F3F;
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    width: 100%;
+} */
