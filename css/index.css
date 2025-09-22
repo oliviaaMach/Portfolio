@@ -8,6 +8,12 @@ main {
     padding: 0 20px 100px; /* extra bottom padding for footer */
 }
 
+hr {
+    border: 1px solid #333;
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
 #content {
     grid-column: span 4;
     width: 50%;
@@ -20,15 +26,19 @@ main {
 
 #content a:hover {
     font-weight: 700;
-    color: #3f3f3d;
+    color: darkblue;
+}
+
+#content p {
+    text-align: justify;
 }
 
 .quotemarks {
     display: flex;
     position: absolute;
     width: 37%;
-    height: 20%;
     align-items: center;
+    margin-top: -160px;
 }
 
 .quotemarks img {
@@ -62,7 +72,23 @@ main {
 
 #main-projects h2 {
     flex-basis: 100%;
+    font-size: 30px;
+    text-align: center;
     margin-bottom: 20px;
+}
+
+.main-p {
+    flex-basis: 100%;
+    /* border: #011F3F 2px solid; */
+    align-self: center;
+    justify-self: center;
+}
+
+.main-p p {
+    max-width: 45%;
+    text-align: justify;
+    justify-self: center;
+
 }
 
 .cards {
