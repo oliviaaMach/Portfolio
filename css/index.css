@@ -16,6 +16,10 @@ hr {
     width: 100%;
 }
 
+p {
+    margin: 15px 30px;
+}
+
 #content {
     grid-column: span 4;
     width: 50%;
@@ -24,6 +28,7 @@ hr {
 
 #content h2 {
     text-align: left;
+    margin: 5px 30px;
 }
 
 #content a:hover {

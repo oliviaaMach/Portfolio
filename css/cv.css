@@ -1,10 +1,20 @@
 /* .p-center {
     text-align: center;
 } */
+
+header {
+    padding-top: 25px;
+}
+
+#cv-main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
  
 #content-cv {
-    grid-column: span 3;
+    grid-column: 3 / 13;
 }
+
 .p-bold {
     font-weight: bold;
 }
@@ -15,4 +25,14 @@
 }
 .h4-margin {
     margin-top: 40px;
+}
+
+.vertical_line {
+    grid-column: 2 / 3;
+    border: 1.5px black solid;
+    height: auto;
+    width: 5px;
+    justify-self: center;
+    border-top: 0;
+    border-bottom: 0;
 }

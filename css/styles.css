@@ -24,13 +24,9 @@ a:hover {
     color: darkblue;
 }
 
-p {
-    margin: 15px 30px;
-}
-
-h2, h3, h4 {
-    margin: 5px 30px;
-}
+/* h2, h3, h4 {
+    /* margin: 5px 30px;
+} */
 
 /* hr {
     height: 1px;
@@ -87,9 +83,6 @@ header {
     height: 400px;
     /* border: 2px red solid; */
     background: var(--gardient);
-    /* background: linear-gradient(135deg, #d5bfbf 0%, #c9d6c5 100%); */
-    /* background: linear-gradient(135deg, #e9d8a6 0%, #bcd4e6 100%); */
-    /* background: radial-gradient(circle at top left, #d8e2dc 0%, #b7c4cf 100%); */
 
 }
 
@@ -155,9 +148,15 @@ header p {
 /* Main START */
 
 #side-info {
-    grid-column: span 1;
+    grid-column: 1 / 2;
 }
 
+main {
+    margin: 40px auto;
+    max-width: 75%;
+    padding: 0 20px 100px; /* extra bottom padding for footer */
+}
+ 
 #side-info,
 #content,
 #content-portfolio,
@@ -165,8 +164,7 @@ header p {
     /* background-color: rgba(255, 255, 255, 0.7); */
     /* border-left: #111 2px solid;
     border-right: #111 2px solid; */
-    padding: 30px 20px;
-    border-radius: 6px;
+    padding: 30px;
 }
 
 /* Main END */
