@@ -1,10 +1,21 @@
-#content-portfolio {
-    grid-column: span 3;
+header {
+    padding-top: 25px;
 }
+
+
+#portfolio-main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+ 
+#content-portfolio {
+    grid-column: 3 / 13;
+}
+
 #content-portfolio ul {
     margin: 15px 30px;
     padding: 0;
-    list-style: none;
+    list-style: disc;
 }
 
 #content-portfolio ul li {
@@ -13,4 +24,14 @@
 
 #content-portfolio ul li a {
     color: darkblue;
+}
+
+.vertical_line {
+    grid-column: 2 / 3;
+    border: 1.5px black solid;
+    height: auto;
+    width: 5px;
+    justify-self: center;
+    border-top: 0;
+    border-bottom: 0;
 }
