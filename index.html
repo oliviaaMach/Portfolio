@@ -13,8 +13,8 @@
 		<title>My Website</title>
 	</head>
 
-	<body> 
-            <nav class="fixed-nav"> 
+	<body>
+            <nav class="fixed-nav">
 
     <!--            hide this block on larger screen-->
                 <nav class="navbar">
@@ -49,13 +49,13 @@
         <header class="wrapper">
 
             <section id="index-hero">
-                <h2>HELLO WORLD, <br/> 
-                    I'M OLIVIA MACH</h2> 
+                <h2>HELLO WORLD, <br/>
+                    I'M OLIVIA MACH</h2>
                 <h3>An upcoming full-stack developer driven by creativity and code.</h3>
                <h3>Come along and follow my journey through my portfolio!</h3>
 
-                    <a href="">
-                        <button class="project-btn">PROJECTS</button>
+                    <a href="#project">
+                        <button class="project-btn" onClick="scrolltoSection('project')">PROJECTS</button>
                     </a>
             </section>
     <hr/>
@@ -89,13 +89,13 @@
     <hr/>
             </div>
 
-            <div class="wrapper index-wrapper">
+            <div class="wrapper index-wrapper" id="project">
                 <div></div>
                 <h3>MY PROJECT</h3>
                         <div class="project-info">
                             <p>Here are three of my projects that I've made by following some courses on Udemy. Click on boxes to play the games. </p>
                         </div>
-                       
+
                     <Section class="card-container">
                         <a href="https://oliviaamach.github.io/theDiceeGame/" target="_blank">
                             <div class="cards card1" target="_blank">
@@ -109,7 +109,7 @@
                             <div class="cards card2" target="_blank">
                                 <h4>The Drumkit</h4>
                                 <img src="./assets/imgs/drumkit2.PNG" alt="Background picture of Drumkit-project" />
-                                <p>This project is build with HTML, CSS and JavaScript. The user can interact with the drumkit by clicking on the pictures or with keyboard keys. 
+                                <p>This project is build with HTML, CSS and JavaScript. The user can interact with the drumkit by clicking on the pictures or with keyboard keys.
                             </p>
                             </div></a>
 
@@ -117,7 +117,7 @@
                             <div class="cards card3" target="_blank">
                                 <h4>The Simon Game</h4>
                                 <img src="./assets/imgs/simongame2.PNG" alt="Background picture of Simon game-project"/>
-                                <p>This project is build with HTML, CSS and JavaScript. The user have to follow the color- and sound sequenses that is shown. 
+                                <p>This project is build with HTML, CSS and JavaScript. The user have to follow the color- and sound sequenses that is shown.
                             </p>
                             </div></a>
                         </section>
@@ -127,8 +127,8 @@
         </main>
 
 
-        
-        
+
+
         <div class="footer-wrapper"></div>
         <footer>
             Copyright &copy; <span id="year"> </span> Olivia Mach

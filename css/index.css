@@ -172,7 +172,7 @@ main.wrapper {
     display: flex;
     align-self: center;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .cards {
