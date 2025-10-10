@@ -1,55 +1,133 @@
+/* max-width: 800px screen START */
 @media (max-width: 800px) {
-    header {
-        display: block;
-        grid-template-columns: 1fr;
-        text-align: center;
-        height: auto;
-    }
-
-
-    header p {
-        border: none;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .main-p p {
-    max-width: 100%;
-    margin-left: 0;
-}
-
-    nav ul {
-        margin: 0 20px;
-    }
-
-    main {
-        display: grid;
-        max-width: 75%;
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .quotemarks {
-    display: flex;
-    width: 37%;
-    justify-self: center;
-    align-content: center;
-    }
-
-    #side-info,
-    #content,
-    #main-projects {
+    .fixed-nav{
         width: 100%;
-        grid-column: span 1/ 1;
-        justify-self: center;
+    }    
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--overall-color);
+        width: 100%;
+        height: 100%;
+        right: 0;
+        position: absolute;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .menu a {
+        color: var(--primary);
+        text-decoration: none;
+        padding: 8px 0;
+        display: block;
+        transition: color 0.5s;
+    }
+
+
+    ul li {
+        list-style: none;
+    }
+
+    .navbar a {
+        font-size: 1.5em;
+    }
+
+    a:hover {
+    color: var(--quaternary);
+}
+
+    #menuToggle {
+        position: absolute;
+        right: 0;
+        margin: 5px 5px 0 5px;
+        padding-top: 10px ;
+        font-size: 2rem;
+        cursor: pointer;
+        display: block;
+        color: var(--tertiary);
+        background-color: #fff;
+        border: none;
+    }
+
+    #menuToggle:hover {
+        color: var(--tertiary);
+    }
+
+        /* Open the menubar with .open */
+
+    .menu.open {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        top: 95px;
+        z-index: 10px;
+    } 
+
+    .wrapper, .footer-wrapper {
+        width: 100%;
+    }
+
+
+/* p, h2 och h3 */
+    p, h2, h3 {
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+.quote {
+    width: 100%;
+}
+
+.flex-img {
+    width: 60%;
+}
+
+.project-info {
+    width: 100%;
+}
+
+    
+/* Footer START */
+
+    footer {
+        display: flex;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: var(--primary);
+        background: var(--secondary);
+        padding: 10px 0;
+        margin: 0;
+        z-index: 100;
+        justify-content: center;
+    }
+
+/* Footer END */
+
+}
+
+/* max-width: 800px screen END */
+
+
+/* max-width: 1024px Screen START */
+
+@media (max-width: 1024px) {
+    .card-container {
+        display: block;
+        margin: 0 10px;
     }
 }
 
-/* hr {
-    height: 1px;
-    border: none;
-    background-color: #011F3F;
-    grid-column: 1 / -1;
-    grid-row: 2 / 2;
-    width: 100%;
-} */
+/* max-width: 1024px Screen END */
+
+
