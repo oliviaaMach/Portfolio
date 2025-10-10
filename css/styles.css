@@ -110,7 +110,7 @@ hr {
 
 .wrapper, .footer-wrapper {
     /* border: #232421 2px solid; */
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     width: 60%;
     justify-self: center;
     }
