@@ -1,20 +1,70 @@
-/* p, h1, h2, h3, h4 */
+/* p, h1, h2, h3, h4, H5*/
 .p-bold {
         font-weight: bold;
 }
 
+.coll-panel p {
+    padding: 0 0 10px 10px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#content-cv p {
+    text-align: justify;
+    margin-right: 20px;
+}
+
 h3 {
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin: 0;padding: 0;
+    padding: 0;
+        margin-top: 40px;
 }
 
 h4 {
-    margin: 10px;
+    font-size: 1.5em;
     font-weight: bold;
-    margin-top: 40px;
+    margin: 0px 0 0 10px;
     width: 100%;
 }
+
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0px 0 0 10px;
+    width: 100%;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 15px 0 0 10px;
+}
+
+/* ul li */
+
+.coll-panel ul {
+    display: flex;
+    flex-direction: column;
+    list-style: disc;
+    gap: 0.5rem;
+    margin: 15px 0;
+}
+
+.coll-panel li {
+    position: relative;
+}
+
+.coll-panel ul li::before {
+    content: "-";
+    position:absolute;
+    left: -20px;
+    top: 2px;
+    color: var(--primary);
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 500; 
+}
+
 
 /* a */
 #side-info a {
@@ -23,24 +73,86 @@ h4 {
    cursor: pointer;
 }
 
-/* CV start */
+/* hr */
+hr {
+    margin-top: 35px;
+}
+
+
+/* Hero START */
+#cv-hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-btn {
+    background-color: var(--quaternary);
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 100px;
+    color: var(--overall-color);
+    letter-spacing: 1px;
+    transition: transform 0.5s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-5px);
+}
+
+/* Hero END */
+
+
+/* CV START */
 
 .cv-wrapper {
     display: grid; 
     grid-template-columns: 30% 5% 65%;
 }
 
+
+/* Side-info START */
+
 #side-info {
     grid-column: 1;
+    margin-left: 15px;
 }
 
 #side-info img {
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
+#side-info h5 {
+    margin-top: 20px;
+}
+
+
+
+/* Side-info END */
+
+.vertical_line {
+    grid-column: 2 / 3;
+    border: 1.5px black solid;
+    height: auto;
+    width: 5px;
+    justify-self: center;
+    border-top: 0;
+    border-bottom: 0;
+    margin-top: 30px;
+}
+
+/* CONTENT START */
+
 #content-cv {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .collapsible {
@@ -54,7 +166,7 @@ h4 {
   text-align: left; 
   padding: 10px;
   cursor: pointer; 
-  background: #e0e0e0;;
+  background: #e0e0e0;
   border: none;
   outline: none;
   transition: background .2s ease;
@@ -70,7 +182,7 @@ h4 {
   }
 
   /* När knappen är aktiv (öppen) – rotera pilen nedåt */
-  .collapsible-btn.active::after {
+.collapsible-btn.active::after {
     transform: rotate(90deg);
   }
 
@@ -83,30 +195,4 @@ h4 {
   width: 96%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.vertical_line {
-    grid-column: 2 / 3;
-    border: 1.5px black solid;
-    height: auto;
-    width: 5px;
-    justify-self: center;
-    border-top: 0;
-    border-bottom: 0;
-}
+/* CONTENT START */
