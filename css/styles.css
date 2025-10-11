@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
     --tertiary: #374A67;
     --quaternary: #9E7B9B;
     --overall-color: #ffffff;
-    --bg-color: #F9F9F8;
 
     font-family:'Montserrat', Arial, sans-serif;
 }
@@ -69,7 +68,7 @@ html {
 }
 
 body {
-    background-image: url("../assets/imgs/bg4.png");
+    background-image: url("../assets/imgs/bg3.png");
     background-color: var(--bg-color);
     background-size: 100%;
     z-index: 0;
@@ -110,7 +109,7 @@ hr {
 
 .wrapper, .footer-wrapper {
     /* border: #232421 2px solid; */
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
     width: 60%;
     justify-self: center;
     }

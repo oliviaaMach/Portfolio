@@ -17,3 +17,21 @@ hamburger.addEventListener("click", () => {
       section.scrollIntoView({ behavior: 'smooth' });
     }
 
+
+
+//collapsible menu in CV
+
+document.querySelectorAll('.collapsible-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const panel = btn.nextElementSibling;
+
+    btn.classList.toggle("active");
+
+
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+});

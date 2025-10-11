@@ -1,0 +1,112 @@
+/* p, h1, h2, h3, h4 */
+.p-bold {
+        font-weight: bold;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;padding: 0;
+}
+
+h4 {
+    margin: 10px;
+    font-weight: bold;
+    margin-top: 40px;
+    width: 100%;
+}
+
+/* a */
+#side-info a {
+   color: var(--primary) ;
+   font-weight: normal;
+   cursor: pointer;
+}
+
+/* CV start */
+
+.cv-wrapper {
+    display: grid; 
+    grid-template-columns: 30% 5% 65%;
+}
+
+#side-info {
+    grid-column: 1;
+}
+
+#side-info img {
+    margin: auto;
+    margin-top: 100px;
+}
+
+#content-cv {
+    margin-top: 100px;
+}
+
+.collapsible {
+    position: relative;
+    margin-top: 50px;
+}
+
+.collapsible-btn {
+  display: flex; 
+  width: 96%; 
+  text-align: left; 
+  padding: 10px;
+  cursor: pointer; 
+  background: #e0e0e0;;
+  border: none;
+  outline: none;
+  transition: background .2s ease;
+  margin-bottom: 1px;
+}
+
+.collapsible-btn::after {
+    position: absolute;
+    content: "▸";
+    right: 40px;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+  }
+
+  /* När knappen är aktiv (öppen) – rotera pilen nedåt */
+  .collapsible-btn.active::after {
+    transform: rotate(90deg);
+  }
+
+.coll-panel { 
+  max-height: 0; 
+  overflow: hidden; 
+  transition: max-height .35s ease;
+  background: #fff;
+  padding: 0 1rem;
+  width: 96%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical_line {
+    grid-column: 2 / 3;
+    border: 1.5px black solid;
+    height: auto;
+    width: 5px;
+    justify-self: center;
+    border-top: 0;
+    border-bottom: 0;
+}
