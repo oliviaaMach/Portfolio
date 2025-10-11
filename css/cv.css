@@ -4,7 +4,7 @@
 }
 
 .coll-panel p {
-    padding: 0 0 10px 10px;
+    padding: 0 0 0 10px;
     font-size: 0.8em;
     font-style: italic;
 }
@@ -47,7 +47,7 @@ h6 {
     flex-direction: column;
     list-style: disc;
     gap: 0.5rem;
-    margin: 15px 0;
+    margin: 5px 0 15px 0;
 }
 
 .coll-panel li {
@@ -166,12 +166,14 @@ hr {
   text-align: left; 
   padding: 10px;
   cursor: pointer; 
-  background: #e0e0e0;
+  background: #f3f3f3;
   border: none;
   outline: none;
   transition: background .2s ease;
   margin-bottom: 1px;
-}
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+
+    }
 
 .collapsible-btn::after {
     position: absolute;
@@ -187,6 +189,7 @@ hr {
   }
 
 .coll-panel { 
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
   max-height: 0; 
   overflow: hidden; 
   transition: max-height .35s ease;
