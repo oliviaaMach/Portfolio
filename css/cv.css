@@ -115,6 +115,7 @@ hr {
 .cv-wrapper {
     display: grid; 
     grid-template-columns: 30% 5% 65%;
+    padding-top: 60px;
 }
 
 
