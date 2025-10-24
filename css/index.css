@@ -102,7 +102,7 @@ main.wrapper {
     margin-top: -2px;
 }
 
-.quote, .project-info {
+.quote, .project-info, .githubs-links {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -160,7 +160,25 @@ main.wrapper {
 
 /* Social media END */
 
+/* Github links START */
 
+.github-links {
+    margin-bottom: 50px;
+    justify-items: center;
+}
+
+.github-links ul {
+    padding: 0;
+}
+
+.github-links ul li {
+    display: block;
+    margin: 5px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Github links END */
 
 /* Project START */
 
@@ -173,15 +191,16 @@ main.wrapper {
     align-self: center;
     justify-content: center;
     padding-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
-    height: 300px;
-    margin: 20px 30px;
+    width: 230px;
+    height: 350px;
+    margin: 20px 15px;
     border-radius: 20px;
     box-shadow: 3px 0 10px 3px rgba(0,0,0,0.3);
     transition: transform 0.5s ease-in-out;
@@ -193,7 +212,7 @@ main.wrapper {
     transform: scale(1.1);
 }
 
-.card1 h4 {
+.card1 h4, .card4 h4 {
     font-size: 20px;
     text-align: center;
     margin-top: 30px;
@@ -216,13 +235,12 @@ main.wrapper {
     margin-top: 20px;
 }
 
-.card1 p {
+.card1 p, .card4 p {
     width: 210px;
     font-size: 13px;
     color: var(--primary);
     text-align: justify;
     margin: 15px 0 0 0;
-    padding: 10px 20px;
 }
 
 .card1 a:hover {
@@ -254,6 +272,15 @@ main.wrapper {
     margin: 15px;
 }
 
+.card4 h4 {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 10px;
+    color: var(--primary);
+}
 
+.card4 img {
+    width: 100px;
+}
 
 /* Project END */
