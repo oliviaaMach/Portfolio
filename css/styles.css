@@ -51,8 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --primary: #232421;
     --secondary: #fafafa;
-    --tertiary: #374A67;
-    --quaternary: #9E7B9B;
+    --tertiary: #374a67;
+    --quaternary: #9e7b9b;
     --overall-color: #ffffff;
 
     font-family:'Montserrat', Arial, sans-serif;
