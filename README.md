@@ -5,12 +5,10 @@ Welcome to the portfolio website of Olivia Mach, an upcoming full-stack develope
 ## Tablets of Content
 
 - [Overview](#Overview)
-- <a src="">Features</a>
-- <a src="">Technologies</a>
-- <a src="">Setup</a>
-- <a src="">Usage</a>
-- <a src="">Folder structure</a>
-- <a src="">License</a>
+- [Features](#Features)
+- [Technologies[(#Technologies)
+- [Setup](#Setup)
+- Author [#Author]
 
 
 ## Overview
