@@ -6,9 +6,9 @@ Welcome to the portfolio website of Olivia Mach, an upcoming full-stack develope
 
 - [Overview](#Overview)
 - [Features](#Features)
-- [Technologies[(#Technologies)
+- [Technologies](#Technologies)
 - [Setup](#Setup)
-- Author [#Author]
+- [Author](#Author)
 
 
 ## Overview
