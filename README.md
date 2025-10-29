@@ -4,7 +4,7 @@ Welcome to the portfolio website of Olivia Mach, an upcoming full-stack develope
 
 ## Tablets of Content
 
-- <a src="#Overview">Overview</a>
+- [Overview](#Overview)
 - <a src="">Features</a>
 - <a src="">Technologies</a>
 - <a src="">Setup</a>
