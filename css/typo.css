@@ -1,0 +1,76 @@
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+    font-size: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: 3em;   
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+}
+
+h4 {
+    font-size: 1.2em; 
+    text-transform: uppercase; 
+}
+
+h5 {
+    font-size: 1em; 
+    font-style: italic;
+    font-weight: normal;   
+    margin-bottom: 1.5%;
+}
+
+
+.projectContent h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#header p { 
+    text-align: justify;
+    position: relative;
+    margin: 5% 0;
+}
+
+#quote p {
+    margin-top: 3%;
+    padding: 0 8em;
+}
+
+#cv h2 {
+    margin: 3% 0;
+}
+
+#cv p {
+    margin: 3% 0;
+    padding: 0 8em;
+}
+
+.p-bold {
+    font-weight: bold;
+}
+
+a {
+    color: var(--rest);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--secondary);
+}
