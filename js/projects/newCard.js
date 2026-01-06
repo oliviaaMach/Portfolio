@@ -4,7 +4,7 @@ import { projectCard } from "./projectCard.js";
 export const myProjects = [
     new projectCard({
         title: "Pokémon API",
-        image: "../../assets/imgs/pokedex.png",
+        image: "../assets/imgs/pokedex.png",
         info: "This project is build with HTML, CSS and JavaScript. The user can use the right and left buttons to go through all the OG Pokémons. ",
         tags: ['HTML','CSS', 'JavaScript'],
         link: "https://oliviaamach.github.io/pokiAPI/",
@@ -13,7 +13,7 @@ export const myProjects = [
 
     new projectCard({
         title: "Ping Pong Game",
-        image: "../../assets/imgs/pingPong.png",
+        image: "../assets/imgs/pingPong.png",
         info: "A simple two-player Pong game built using vanilla JavaScript and the HTML5 Canvas API. This project recreates the classic arcade experience: move the paddles, hit the ball, and score points!",
         tags: ['HTML', 'CSS', 'JavaScript'],
         link: "https://oliviaamach.github.io/pingPong-game/",
@@ -22,7 +22,7 @@ export const myProjects = [
 
     new projectCard({
         title: "To Do List",
-        image: "../../assets/imgs/toDo.png",
+        image: "../assets/imgs/toDo.png",
         info: "A simple and elegant To-Do List web application built with HTML, CSS, and JavaScript. This app allows users to add, mark as completed, and delete tasks — with data persistence using localStorage, so your tasks remain even after refreshing the page.",
         tags: ['HTML', 'CSS', 'JavaScript'],
         link: "https://oliviaamach.github.io/todolist/",
@@ -30,7 +30,7 @@ export const myProjects = [
     }),
     new projectCard({
         title: "The Drumkit",
-        image: "../../assets/imgs/drumKit.png",
+        image: "../assets/imgs/drumKit.png",
         info: "This project is build with HTML, CSS and JavaScript. The user can interact with the drumkit by clicking on the pictures or with keyboard keys.",
         tags: ['HTML', 'CSS', 'JavaScript'],
         link: "https://oliviaamach.github.io/drumkit/",
@@ -39,7 +39,7 @@ export const myProjects = [
     }),
     new projectCard({
         title: "The Dicee Game",
-        image: "../../assets/imgs/dicee.png",
+        image: "../assets/imgs/dicee.png",
         info: "This project is build with HTML, CSS and JavaScript where two player roll a dice. The higher roll wins.",
         tags: ['HTML', 'CSS', 'JavaScript'],
         link: "https://oliviaamach.github.io/theDiceeGame/",
@@ -48,7 +48,7 @@ export const myProjects = [
 
         new projectCard({
         title: "Simons Game",
-        image: "../../assets/imgs/simons.png",
+        image: "../assets/imgs/simons.png",
         info: "This project is build with HTML, CSS and JavaScript. The user have to follow the color- and sound sequenses that is shown.",
         tags: ['HTML', 'CSS', 'JavaScript'],
         link: "https://oliviaamach.github.io/simongame/",
