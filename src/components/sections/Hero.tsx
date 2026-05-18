@@ -35,7 +35,11 @@ export default function Hero() {
         </div>
 
         <div className="hero-image">
-          <img className="profile" src="/images/profile3.png" alt="Olivia Mach" />
+          <img
+            className="profile"
+            src={`${import.meta.env.BASE_URL}images/profile3.png`}
+            alt="Olivia Mach"
+          />
         </div>
       </div>
     </section>
