@@ -1,81 +1,73 @@
-# My Portfolio - Olivia Mach
+# React + TypeScript + Vite
 
-Welcome to the portfolio website of Olivia Mach, an upcoming full-stack developer passionate about creativity and code. This site showcases Olivia’s projects, CV, contact information, and even a live weather widget for selected cities.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tablets of Content
+Currently, two official plugins are available:
 
-- [Overview](#Overview)
-- [Features](#Features)
-- [Technologies](#Technologies)
-- [Setup](#Setup)
-- [Author](#Author)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
+## React Compiler
 
-## Overview
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-This portfolio website highlights my projects, and experience in full-stack development. It includes:
+## Expanding the ESLint configuration
 
-- Responsive navigation (desktop & mobile)
-- Project showcase with live links
-- Social media integration (LinkedIn, GitHub, Email)
-- Interactive weather widget fetching live data from SMHI
-- Smooth scrolling and collapsible panels for better UX
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-## Features
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-### 1. Navigation
-- Desktop navbar with logo and links
-- Hamburger menu for mobile devices
-- Smooth scroll to sections
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-### 2. Hero Section
-- Introduction with headline
-- Call-to-action button linking to projects section
-
-
-### 3. Projects Section
-- Showcases multiple projects with images, descriptions, and live links
-- Interactive hover effects on project cards
-
-
-### 4. Weather Widget
-- Select a city from the dropdown
-- Fetches latest temperature from SMHI API
-- Automatically refreshes every 5 minutes
-- Displays day and time of last reading
-- Responsive and mobile-friendly design
-
-
-### 5. About Me
-- Brief introduction
-- Links to educational background and learning journey
-- Encouragement for collaborations
-
-
-### 6. Footer
-- Current year dynamically updated
-- Contact info
-
-
-
-## Technologies
-- HTML5 & CSS3 – Semantic markup and responsive design
-- JavaScript (ES6+) – Dynamic DOM manipulation and API calls
-- SMHI Open Data API – Fetching real-time weather data
-- Google Fonts – Custom typography
-
-
-
-## Setup
-1. git clone https://github.com/oliviaaMach/portfolio.git
-Navigate to the project folder:
-2. cd portfolio
-3. Open index.html in your browser or run a local server (recommended for full JS functionality)
-
-
-## Author
-GitHub: https://github.com/oliviaaMach
-
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```

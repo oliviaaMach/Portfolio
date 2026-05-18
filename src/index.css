@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "AxelBrush Regular";
+  src: url("./assets/fonts/AlexBrush-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* Background-colors  */
+  --primary-bg: #ffffff;
+  --secondary-bg: #f9fafb;
+
+  /* border-color */
+  --border-color: #eeeeee;
+  --primary-border: #e5e7eb;
+  --secondary-border: #111827;
+  --hero-border: #d1d5db;
+
+  /* Text-colors */
+  --primary-text: #111827;
+  --secondary-text: #4b5563;
+  --footer-text: #6b7280;
+  --accent-color: #da8d69;
+  --blue: #3b82f6;
+
+  /* Buttons */
+  --button-bg: #111827;
+  --button-hover-bg: #374151;
+
+  --primary-btn-text: #ffffff; 
+
+  /* Links */
+  --primary-link: #111827;
+  --secondary-link: #374151;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+h1,
+p {
+  margin: 0;
+}

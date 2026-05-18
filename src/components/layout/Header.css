@@ -1,0 +1,70 @@
+/* src/components/layout/Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.8 );
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(14px);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary-text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--secondary-link);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-btn-text);
+  background-color: var(--accent-color);
+}
+
+.cv-button {
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--secondary-border);
+  border-radius: 8px;
+  color: var(--primary-btn-text);
+  background-color: var(--button-bg);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.cv-button:hover {
+  background: var(--secondary-link);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .cv-button {
+    font-size: 0.8rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
