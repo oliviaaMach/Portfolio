@@ -19,15 +19,15 @@ export default function Contact({variant = "secondary-bg"}: ContactProps) {
         </p>
 
         <div className="contact-links">
-          <a href="mailto:your.email@example.com" className="primary-button">
+          <a href="mailto:olivia.mach@outlook.com" className="primary-button">
             Email me
           </a>
 
-          <a href="https://www.linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/olivia-mach-0b433811a/" target="_blank">
             LinkedIn
           </a>
 
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/oliviaaMach" target="_blank">
             GitHub
           </a>
         </div>
