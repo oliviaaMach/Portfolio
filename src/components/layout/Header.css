@@ -1,4 +1,3 @@
-/* src/components/layout/Header.css */
 .header {
   position: sticky;
   top: 0;
@@ -18,10 +17,15 @@
 }
 
 .logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--primary-text);
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+}
+
+.logo img {
+  width: 5rem;
+  display: block;
+  
 }
 
 .nav-links {

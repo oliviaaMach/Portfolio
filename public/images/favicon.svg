@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="OM favicon">
+  <title>OM favicon</title>
+  <!-- Transparent background outside the circle -->
+  <circle cx="32" cy="32" r="29" fill="#d1d5db" stroke="#111827" stroke-width="2"/>
+
+  <!-- Decorative flourish inspired by the original logo -->
+  <path d="M12.5 37.5
+           C17.5 26.5, 31 34.5, 35.5 31.5
+           C40.5 28.2, 44.8 29.5, 51.5 35.5
+           C56.5 40, 59 31.8, 53.5 34.2"
+        fill="none"
+        stroke="#111827"
+        stroke-width="1.45"
+        stroke-linecap="round"/>
+  <path d="M13.2 38.4
+           C9 44.4, 19.8 47.5, 27.5 39.8"
+        fill="none"
+        stroke="#111827"
+        stroke-width="1.45"
+        stroke-linecap="round"/>
+
+  <!-- OM monogram -->
+  <text x="15.2" y="35.5"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="32"
+        font-weight="700"
+        fill="#111827">O</text>
+  <text x="25.5" y="47.2"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="34"
+        font-weight="700"
+        fill="#111827">M</text>
+</svg>

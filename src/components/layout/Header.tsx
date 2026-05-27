@@ -1,10 +1,11 @@
 import "./Header.css"
+import logo from "../../../public/images/logo.png"
 
 export default function Header () {
     return(
         <header className="header">
             <nav className="navbar">
-                <a href="#home" className="logo">O.M</a>
+                <a href="#home" className="logo"><img src={logo} /></a>
                 <ul className="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
