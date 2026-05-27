@@ -8,13 +8,13 @@ export default function Footer() {
         <p>© 2026 Olivia. Built with React, TypeScript & CSS.</p>
 
         <div className="footer-links">
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/oliviaaMach" target="_blank">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/olivia-mach-0b433811a/" target="_blank">
             LinkedIn
           </a>
-          <a href="mailto:your.email@example.com">
+          <a href="mailto:olivia.mach@outlook.com">
             Email
           </a>
         </div>
