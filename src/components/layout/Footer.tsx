@@ -1,22 +1,25 @@
-// src/components/layout/Footer.tsx
 import "./Footer.css";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-container">
-        <p>© 2026 Olivia. Built with React, TypeScript & CSS.</p>
+        <p>&copy; {year} Olivia Mach</p>
 
         <div className="footer-links">
-          <a href="https://github.com/oliviaaMach" target="_blank">
+          <a href="https://github.com/oliviaaMach" target="_blank" rel="noreferrer">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/olivia-mach-0b433811a/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/olivia-mach-0b433811a/"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
-          <a href="mailto:olivia.mach@outlook.com">
-            Email
-          </a>
+          <a href="mailto:olivia.mach@outlook.com">Email</a>
         </div>
       </div>
     </footer>

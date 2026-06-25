@@ -7,7 +7,12 @@ export default function Hero() {
         <div className="hero-copy">
           <p className="hero-label">Frontend / Fullstack Developer Student</p>
 
-          <h1>Olivia Mach</h1>
+          <div className="hero-heading">
+            <h1>Olivia Mach</h1>
+            <a className="email" href="mailto:olivia.mach@outlook.com">
+              olivia.mach@outlook.com
+            </a>
+          </div>
 
           <p className="hero-text">
             An upcoming full-stack developer

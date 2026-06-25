@@ -14,16 +14,8 @@ export default function Projects({ variant = "primary-bg" }: ProjectsProps) {
         <h2>Selected Projects</h2>
 
         <div className="projects-grid">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              image={project.image}
-              description={project.description}
-              tech={project.tech}
-              liveUrl={project.liveUrl}
-              githubUrl={project.githubUrl}
-            />
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
           ))}
         </div>
       </div>
