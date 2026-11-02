@@ -1,41 +1,46 @@
-import "./Contact.css";
-import Section from "../layout/Section";
+import { sections } from "../../data/sections";
+import { contact } from "../../data/contact";
+import { SectionLabel } from "../ui/SectionLabel";
+import { Button } from "../ui/Button";
+import { CopyButton } from "../ui/copyButton";
 
-type ContactProps = {
-  variant?: "primary-bg" | "secondary-bg"
-}
-
-export default function Contact({ variant = "secondary-bg" }: ContactProps) {
+export function Contact() {
   return (
-    <Section className="contact" id="contact" variant={variant}>
-      <div className="contact-container">
-        <p className="section-label">Contact</p>
+    <section
+      id={sections.contact}
+      className="mx-auto flex max-w-6xl flex-col items-start gap-7 px-5 py-20 md:px-8 md:py-28"
+    >
+      <SectionLabel number="04" label="Kontakt" />
 
-        <h2>Let's connect</h2>
+      <h2 className="font-sans font-semibold text-4xl md:text-hero
+                      leading-none tracking-[-0.02em]">
+        Ska vi bygga
+        <br />
+        något{" "}
+        <span className="decoration-sage decoration-8 underline">ihop?</span>
+      </h2>
 
-        <p className="contact-text">
-          I'm always open to opportunities where I can grow through collaboration
-          and contribute to exciting projects.
-        </p>
-
-        <div className="contact-links">
-          <a href="mailto:olivia.mach@outlook.com" className="primary-button">
-            Email me
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/olivia-mach-0b433811a/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <a href="https://github.com/oliviaaMach" target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-        </div>
+      <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
+        <Button href={`mailto:${contact.email}`}>
+          {contact.email}
+        </Button>
+        <CopyButton text={contact.email} />
       </div>
-    </Section>
+
+      <ul className="flex flex-wrap gap-3">
+        {contact.links.map((link) => (
+          <li key={link.label}>
+            <Button
+              href={link.href}
+              variant="outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {link.label} ↗
+            </Button>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }

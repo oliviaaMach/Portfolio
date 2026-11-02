@@ -1,61 +1,32 @@
-import type { Project } from "../types"
+import type { Filter, Project } from "../types";
 
+export const filters: Filter[] = ["Alla", "Frontend", "Backend", "Mobile", ];
 export const projects: Project[] = [
-  {
-    title: "WeatherApp",
-    description:
-      "A responsive weather app with city search, current conditions, hourly and five-day forecasts, favorites, map view, dark mode, language options, and Celsius/Fahrenheit support.",
-    tech: ["React", "TypeScript", "Open-Meteo API", "LocalStorage"],
-    image: `${import.meta.env.BASE_URL}images/projects/weatherApp.png`,
-    liveUrl: "https://oliviaamach.github.io/weatherApp/",
-    githubUrl: "https://github.com/oliviaaMach/weatherApp",
-  },
-  {
-    title: "The Drumkit",
-    description:
-      "This project is build with HTML, CSS and JavaScript. The user can interact with the drumkit by clicking on the pictures or with keyboard keys.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/projects/drumKit.png`,
-    imageClassName: "drumkitImage",
-    liveUrl: "https://oliviaamach.github.io/drumkit/",
-    githubUrl: "https://github.com/oliviaaMach/drumkit",
-  },
-  {
-    title: "Ping Pong",
-    description:
-      "A simple two-player Pong game built using vanilla JavaScript and the HTML5 Canvas API. This project recreates the classic arcade experience: move the paddles, hit the ball, and score points!",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/projects/pingPong.png`,
-    imageClassName: "pingPongImage",
-    liveUrl: "https://oliviaamach.github.io/pingPong-game/",
-    githubUrl: "https://github.com/oliviaaMach/pingPong-game",
-  },
-  {
-    title: "PokéDex",
-    description:
-      "This project is build with HTML, CSS and JavaScript. The user can use the right and left buttons to go through all the OG Pokémons. ",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/projects/pokedex.png`,
-    liveUrl: "https://oliviaamach.github.io/pokiAPI/",
-    githubUrl: "https://github.com/oliviaaMach/pokiAPI",
-  },
-  {
-    title: "Simons",
-    description:
-      "This project is build with HTML, CSS and JavaScript. The user have to follow the color- and sound sequenses that is shown.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/projects/simons.png`,
-    liveUrl: "https://oliviaamach.github.io/simongame/",
-    githubUrl: "https://github.com/oliviaaMach/simongame",
-  },
-  {
-    title: "The ToDo List",
-    description:
-      "A simple and elegant To-Do List web application built with HTML, CSS, and JavaScript. This app allows users to add, mark as completed, and delete tasks — with data persistence using localStorage, so your tasks remain even after refreshing the page.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    image: `${import.meta.env.BASE_URL}images/projects/toDo.png`,
-    imageClassName: "toDoImage",
-    liveUrl: "https://oliviaamach.github.io/todolist/",
-    githubUrl: "https://github.com/oliviaaMach/todolist",
-  },
-]
+    {
+        name: "WeatherApp",
+        category: "Frontend",
+        description:"En responsiv väderapp med stadssökning, aktuella väderförhållanden, timprognos och femdagarsprognos, favoriter, kartvy, mörkt läge, språkval samt stöd för Celsius och Fahrenheit.",
+        stack: ["React", "TypeScript", "API", ],
+        cover: "sage",
+        live: "https://oliviaamach.github.io/weatherApp/",
+        github: "https://github.com/oliviaaMach/weatherApp",
+    },
+    {
+        name: "To Do List",
+        category: "Frontend",
+        description:"En stilren och elegant att-göra-lista byggd med HTML, CSS och JavaScript. Appen låter användare lägga till, markera som slutförda och ta bort uppgifter. Med hjälp av localStorage sparas uppgifterna även efter att sidan har laddats om.",
+        stack: ["HTML", "CSS", "JavaScript",],
+        cover: "ink",
+        live: "https://oliviaamach.github.io/todolist/",
+        github: "https://github.com/oliviaaMach/todolist",
+    },
+    {
+        name: "PokéDex",
+        category: "Frontend",
+        description:"Det här projektet är byggt med HTML, CSS och JavaScript. Användaren kan navigera genom alla original-Pokémon med hjälp av höger- och vänsterknapparna.",
+        stack: ["HTML", "CSS", "JavaScript"],
+        cover: "rose",
+        live: "https://oliviaamach.github.io/pokiAPI/",
+        github: "https://github.com/oliviaaMach/pokiAPI",
+    },
+]; 

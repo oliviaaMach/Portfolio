@@ -1,52 +1,42 @@
-import "./Hero.css";
+import { Button } from "../ui/Button";
+import { ProfileBlob } from "../profile/ProfileBlob";
+import { sections } from "../../data/sections";
 
-export default function Hero() {
+export function Hero() {
   return (
-    <section className="hero" id="home">
-      <div className="hero-content">
-        <div className="hero-copy">
-          <p className="hero-label">Frontend / Fullstack Developer Student</p>
-
-          <div className="hero-heading">
-            <h1>Olivia Mach</h1>
-            <a className="email" href="mailto:olivia.mach@outlook.com">
-              olivia.mach@outlook.com
-            </a>
-          </div>
-
-          <p className="hero-text">
-            An upcoming full-stack developer
-            <br />
-            driven by <span className="creativity">Creativity</span> and{" "}
-            <span className="code">code</span>
-          </p>
-
-          <div className="hero-actions">
-            <a href="#projects" className="primary-button">
-              View projects
-            </a>
-
-            <a href="#contact" className="secondary-button">
-              Contact me
-            </a>
-          </div>
-
-          <div className="tech-stack">
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>CSS</span>
-          </div>
+    <section
+      id={sections.top}
+      className="mx-auto flex max-w-6xl flex-col-reverse items-center gap-10 px-5 pb-16 pt-6 md:flex-row md:gap-14 md:px-8 md:pb-24 md:pt-12"
+    >
+      {/* Text */}
+      <div className="flex flex-1 flex-col gap-6">
+        <div className="flex flex-col md:flex-row gap-3">
+            <p className="inline-flex items-center gap-2 self-start rounded-full bg-sage px-3.5 py-2 font-mono text-medium font-semibold">
+                <span aria-hidden="true" className="size-2 rounded-full bg-ink" />
+                olivia.mach@outlook.com
+            </p>
+            <p className="inline-flex items-center gap-2 self-start rounded-full bg-sage px-3.5 py-2 font-mono text-medium font-semibold">
+                <span aria-hidden="true" className="size-2 rounded-full bg-ink" />
+                Öppen för jobb
+            </p>
         </div>
 
-        <div className="hero-image">
-          <img
-            className="profile"
-            src={`${import.meta.env.BASE_URL}images/profile3.png`}
-            alt="Olivia Mach"
-          />
+
+        <h1 className="font-display text-hero font-bold leading-[0.97] tracking-[-0.03em] md:text-big-hero">
+         En blivande fullstack-utvecklare inspirerad av 
+            <span className="bg-linear-to-r from-rose via-rose-deep to-sage bg-clip-text text-transparent 
+                            italic font-script tracking-[0.06em]"> kreativitet</span> och 
+             <span className="font-mono"> kod</span>
+        </h1>
+
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <Button href={`#${sections.projects}`}>Se mina projekt</Button>
+          <Button href={`#${sections.playground}`} variant="outline">Testa terminalen</Button>
         </div>
       </div>
+
+      {/* Bild */}
+      <ProfileBlob />
     </section>
   );
 }
