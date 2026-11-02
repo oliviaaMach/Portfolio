@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Alex Brush";
+  src: url("../assets/fonts/AlexBrush-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* ---------- Färger ---------- */
+  --color-paper: #FFFFFF;  
+  --color-paper-light: #CFE0C3;      /* sidbakgrund */
+  --color-blush: #FBF0F1;
+  --color-line: #EAD9DC;        /* tunna linjer */
+
+  --color-ink: #2E2230;         /* text + mörka sektioner */
+  --color-ink-soft: #5A4A55;    /* brödtext */
+  --color-ink-muted: #75606A;   /* små etiketter */
+
+  --color-rose: #E8B4BC;        /* accent – ytor */
+  --color-rose-deep: #9E5068;   /* accent – text & länkar */
+  --color-rose-hover: #7A3A4F;
+  --color-sage: #CFE0C3;        /* sekundär accent */
+
+  --color-night: #221922;       /* terminal-bakgrund */
+  --color-night-line: #4A3A47;
+  --color-night-text: #F5E9EC;
+
+  /* ---------- Typsnitt ---------- */
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-script: "Alex Brush", cursive;
+
+
+/* ---------- Text-storlek ---------- */
+  --text-small: 12px;
+  --text-medium: 14px;
+  --text-large: 16px;
+  --text-subtitle: 32px;
+  --text-hero: 48px;
+  --text-big-hero: 68px;
+
+
+  /* ---------- Former ---------- */
+  --radius-btn: 14px;
+  --radius-card: 24px;
+  --radius-blob: 46% 54% 42% 58% / 52% 44% 56% 48%;
+  --radius-chat-me: 18px 18px 18px 4px;
+  --radius-chat-visitor: 18px 18px 4px 18px;
+
+  --shadow-sticker: 8px 8px 0 var(--color-ink);
+
+  /* ---------- Animationer ---------- */
+  --animate-spin-slow: spin 18s linear infinite;
+  --animate-blink: blink 1s step-end infinite;
+  --animate-pop: pop 0.25s ease-out;
+  --shadow-pop: 0 12px 24px -6px rgb(46 34 48 / 0.50);
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: none; }
+  }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  a, button {
+    cursor: pointer;
+  }
+}
